@@ -1,0 +1,27 @@
+{
+  "name": "budget-tracker",
+  "version": "1.0.0",
+  "description": "- Using Progressive Web Application (PWA) this application enables the user to add expenses and deposits to their budget with or without an online connection. When entering transactions offline, data should populate the total when connected back online.",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "install": "^0.13.0",
+    "mongodb": "^3.5.5",
+    "mongoose": "^5.9.7",
+    "nodemon": "^2.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ethanlloyd21/Budget-Tracker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ethanlloyd21/Budget-Tracker/issues"
+  },
+  "homepage": "https://github.com/Ethanlloyd21/Budget-Tracker#readme"
+}
