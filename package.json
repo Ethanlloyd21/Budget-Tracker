@@ -2,7 +2,7 @@
   "name": "budget-tracker",
   "version": "1.0.0",
   "description": "- Using Progressive Web Application (PWA) this application enables the user to add expenses and deposits to their budget with or without an online connection. When entering transactions offline, data should populate the total when connected back online.",
-  "main": "index.js",
+  "main": "server.js",
   "dependencies": {
     "express": "^4.17.1",
     "install": "^0.13.0",
