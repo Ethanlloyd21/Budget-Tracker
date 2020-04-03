@@ -6,9 +6,9 @@ const FILES_TO_CACHE = [
     `/db.js`,
     `/index.html`,
     `/index.js`,
-    `/assets/css/style.css`,
+    `/index.css`,
     `/manifest.webmanifest`,
-    `/assets/images/budgetIcon.png`
+    `/img/icons/icon-192x192.png`
 ];
 
 const STATIC_CACHE = `static-cache-v1`;
