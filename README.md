@@ -2,8 +2,17 @@
 
 ![](public/img/sample.PNG)
 
+### User Story
+AS AN avid traveller
+I WANT to be able to track my withdrawals and deposits with or without a data/internet connection
+SO THAT my account balance is accurate when I am traveling
+
+### Business Context
+Giving users a fast and easy way to track their money is important, but allowing them to access that information anytime is even more important. Having offline functionality is paramount to our applications success.
+
 ## Table of contents
 - [General Info](#Info)
+- [Functionality](#Functionality)
 - [Install](#Install)
 - [Dependencies](#Dependencies)
 - [Technologies](#Technologies)
@@ -14,16 +23,37 @@
 # General Info
 - Using Progressive Web Application (PWA) this application enables the user to add expenses and deposits to their budget with or without an online connection. When entering transactions offline, data should populate the total when connected back online.
 
+### What is Progressive Web Application (PWA)?
+- A Progressive Web App (PWA) is a web app that uses modern web capabilities to deliver an app-like experience to users. These apps meet certain requirements (see below), are deployed to servers, accessible through URLs, and indexed by search engines.
 
-### User Story
-AS AN avid traveller
-I WANT to be able to track my withdrawals and deposits with or without a data/internet connection
-SO THAT my account balance is accurate when I am traveling
+### What is required for PWA?
+To be considered a Progressive Web App, your app must be:
 
-### Business Context
-Giving users a fast and easy way to track their money is important, but allowing them to access that information anytime is even more important. Having offline functionality is paramount to our applications success.
+- Progressive - Work for every user, regardless of browser choice, because they are built with progressive enhancement as a core tenet.
 
-## Functionality 
+- Responsive - Fit any form factor, desktop, mobile, tablet, or whatever is next.
+
+- Connectivity independent - Enhanced with service workers to work offline or on low quality networks.
+
+- App-like - Use the app-shell model to provide app-style navigation and interactions.
+
+- Fresh - Always up-to-date thanks to the service worker update process.
+
+- Safe - Served via HTTPS to prevent snooping and ensure content has not been tampered with.
+
+- Discoverable - Are identifiable as “applications” thanks to W3C manifests and service worker registration scope allowing search engines to find them.
+
+- Re-engageable - Make re-engagement easy through features like push notifications.
+
+- Installable - Allow users to “keep” apps they find most useful on their home screen without the hassle of an app store.
+
+- Linkable - Easily share via URL and not require complex installation.
+
+#### Offline Support
+- Apps should be able to work offline. Whether that be displaying a proper "offline" message or caching app data for display purpose.
+
+
+# Functionality 
 
 Offline Functionality:
 - Enter deposits offline
