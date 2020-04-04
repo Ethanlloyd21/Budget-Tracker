@@ -157,7 +157,7 @@ self.addEventListener(`fetch`, event => {
                         .then(reg => console.log('We found your service worker file!', reg))
                 );
             }
-        </script>
+</script>
 
 ```
 # Install
