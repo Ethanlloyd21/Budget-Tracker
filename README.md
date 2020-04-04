@@ -1,4 +1,5 @@
 # Budget-Tracker
+- Using Progressive Web Application (PWA) this application enables the user to add expenses and deposits to their budget with or without an online connection. When entering transactions offline, data should populate the total when connected back online.
 
 ![](public/img/sample.PNG)
 
@@ -21,7 +22,6 @@ Giving users a fast and easy way to track their money is important, but allowing
 - [License](#License)
 
 # General Info
-- Using Progressive Web Application (PWA) this application enables the user to add expenses and deposits to their budget with or without an online connection. When entering transactions offline, data should populate the total when connected back online.
 
 ### What is Progressive Web Application (PWA)?
 - A Progressive Web App (PWA) is a web app that uses modern web capabilities to deliver an app-like experience to users. These apps meet certain requirements (see below), are deployed to servers, accessible through URLs, and indexed by search engines.
