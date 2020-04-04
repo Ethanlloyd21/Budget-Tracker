@@ -32,6 +32,8 @@ Offline Functionality:
 When brought back online:
 - Offline entries should be added to tracker.
 
+## *In order to achieve PWA a web manifest file and a service worker file must be created.*
+
 ### Manifest ``` manifest.webmanifest ```
 - #### Purpose
     - The manifest file is a simple text file (JSON file) that lists the resources the browser should cache for offline access. 
