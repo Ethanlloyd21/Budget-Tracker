@@ -95,6 +95,11 @@ This can be linked in the main html file ``` index.html ```
 - #### Purpose
     - Service worker provides a programmatic way to cache app resources.  
 
+- #### Service Worker Life Cycle
+    - install
+    - activate
+    - fetch
+
 ``` bash 
 console.log('This is your service-worker.js file!');
 
