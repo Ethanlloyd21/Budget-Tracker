@@ -55,7 +55,7 @@ To be considered a Progressive Web App, your app must be:
 
 # Functionality 
 
-Offline Functionality:
+BUDGET-TRACKER Offline Functionality:
 - Enter deposits offline
 - Enter expenses offline
 
@@ -66,7 +66,7 @@ When brought back online:
 
 ### Manifest ``` manifest.webmanifest ```
 - #### Purpose
-    - The manifest file is a simple text file (JSON file) that lists the resources the browser should cache for offline access. 
+    - The manifest file is a simple text file (JSON file) that lists the resources (app's displayed name, icons, as well as splash screen) the browser should cache for offline access. 
 ``` bash
 {
     "short_name": "Budget-Tracker",
@@ -93,7 +93,7 @@ This can be linked in the main html file ``` index.html ```
 ```
 ### Service Worker  ``` service-worker.js ```
 - #### Purpose
-    - A Service Worker is basically a script that runs in background and assits in offline web application.  
+    - Service worker provides a programmatic way to cache app resources.  
 
 ``` bash 
 console.log('This is your service-worker.js file!');
