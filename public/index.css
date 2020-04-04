@@ -30,6 +30,7 @@ input:focus {
     outline: 0;
 }
 
+/*
 button {
     background: #8a33fe;
     border: none;
@@ -37,8 +38,11 @@ button {
     cursor: pointer;
     color: #ffffff;
     padding: 10px;
+   
     box-shadow: inset 0 -3px 0 0 #4801a5;
+   
 }
+*/
 
 button:active {
     box-shadow: none;
@@ -77,4 +81,8 @@ form {
 
 .transaction-buttons {
     margin-top: 25px;
+}
+
+#auth-image {
+    border-radius: 50%;
 }

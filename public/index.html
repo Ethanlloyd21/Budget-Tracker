@@ -8,45 +8,104 @@
     <meta name="theme-color" content="#317EFB" />
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <!-- Added link to the jQuery Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
     <link rel="stylesheet" href="/index.css" />
     <link rel="manifest" href="/manifest.webmanifest" />
     <title>Budget Tracker</title>
 </head>
 
 <body>
-    <div class="wrapper">
-        <div class="total">
-            <div>Your total is: $<span id="total">0</span></div>
-        </div>
+    <!--Nav bar on top as a header -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="./img/icons/money.png" alt="" height="40px" width="40px" id="auth-image" />
+                BUDGET TRACKER
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/Ethanlloyd21/Budget-Tracker"><img
+                                src="https://icon-library.net/images/github-icon-png/github-icon-png-29.jpg" alt=""
+                                height="32" width="32" />
+                            Github</a>
+                    </li>
 
-        <form>
-            <label for="t-name">Transaction Name:</label>
-            <input type="text" id="t-name" placeholder="Name" />
-
-            <label for="t-amount">Transaction Amount:</label>
-            <input type="number" min="0" id="t-amount" placeholder="Amount" />
-
-            <div class="transaction-buttons">
-                <button id="add-btn"><i class="fa fa-plus"></i> Add Funds</button>
-                <button id="sub-btn">
-                    <i class="fa fa-minus"></i> Subtract Funds
-                </button>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="https://lloydmarcelino.com">Author <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
             </div>
-            <p role="alert" class="error"></p>
-        </form>
-
-        <div class="transactions">
-            <table>
-                <thead>
-                    <th>Transaction</th>
-                    <th>Amount</th>
-                </thead>
-                <tbody id="tbody"></tbody>
-            </table>
         </div>
+    </nav>
 
-        <canvas id="my-chart"></canvas>
+    <!-- Main Body-->
+    <div class="jumbotron">
+        <div class="container">
+            <h1 class="display-4">$<span id="total">0</span></h1>
+            <p class="lead">My Current Balance</p>
+            <p>
+                <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#collapseExample"
+                    aria-expanded="false" aria-controls="collapseExample">
+                    Manage my Budget
+                </button>
+            </p>
+        </div>
     </div>
+    <div class="collapse" id="collapseExample">
+        <div class="wrapper">
+
+
+            <form>
+                <label for="t-name">Transaction Name:</label>
+                <input type="text" id="t-name" placeholder="Name" />
+                <br><br>
+
+                <label for="t-amount">Transaction Amount:</label>
+                <input type="number" min="0" id="t-amount" placeholder="Amount" />
+
+                <div class="transaction-buttons">
+                    <button class="btn btn-info" type="button" id="add-btn"><i class="fa fa-plus"></i> Add
+                        Funds</button>
+                    <button class="btn btn-info" type="button" id="sub-btn">
+                        <i class="fa fa-minus"></i> Subtract Funds
+                    </button>
+                </div>
+                <p role="alert" class="error"></p>
+            </form>
+
+            <div class="transactions">
+                <table>
+                    <thead>
+                        <th>Transaction</th>
+                        <th>Amount</th>
+                    </thead>
+                    <tbody id="tbody"></tbody>
+                </table>
+            </div>
+
+            <canvas id="my-chart"></canvas>
+        </div>
+    </div>
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+
+    <!-- Bootstrap JavaScript CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
     <script src="/db.js"></script>
