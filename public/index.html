@@ -53,72 +53,90 @@
     </nav>
 
     <!-- Main Body-->
-    <div class="jumbotron">
-        <div class="container">
-            <h1 class="display-4">$<span id="total">0</span></h1>
-            <p class="lead">My Current Balance</p>
-            <p>
-                <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#collapseExample"
-                    aria-expanded="false" aria-controls="collapseExample">
-                    Manage my Budget
-                </button>
-            </p>
-        </div>
-    </div>
-    <div class="collapse" id="collapseExample">
-        <div class="wrapper">
-
-
-            <form>
-                <label for="t-name">Transaction Name:</label>
-                <input type="text" id="t-name" placeholder="Name" />
-                <br><br>
-
-                <label for="t-amount">Transaction Amount:</label>
-                <input type="number" min="0" id="t-amount" placeholder="Amount" />
-
-                <div class="transaction-buttons">
-                    <button class="btn btn-info" type="button" id="add-btn"><i class="fa fa-plus"></i> Add
-                        Funds</button>
-                    <button class="btn btn-info" type="button" id="sub-btn">
-                        <i class="fa fa-minus"></i> Subtract Funds
+    <div class="wrapper">
+        <div class="jumbotron">
+            <div class="container">
+                <h1 class="display-4">$<span id="total">0</span></h1>
+                <p class="lead">My Current Balance</p>
+                <p>
+                    <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#collapseExample"
+                        aria-expanded="false" aria-controls="collapseExample">
+                        Manage my Budget
                     </button>
-                </div>
-                <p role="alert" class="error"></p>
-            </form>
+                </p>
+            </div>
+        </div>
+        <div class="collapse" id="collapseExample">
 
-            <div class="transactions">
-                <table>
-                    <thead>
-                        <th>Transaction</th>
-                        <th>Amount</th>
-                    </thead>
-                    <tbody id="tbody"></tbody>
-                </table>
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+
+                            <form>
+                                <label for="t-name">Transaction Name:</label>
+                                <input type="text" id="t-name" placeholder="Name" />
+                                <br><br>
+
+                                <label for="t-amount">Transaction Amount:</label>
+                                <input type="number" min="0" id="t-amount" placeholder="Amount" />
+
+                                <div class="transaction-buttons">
+                                    <button class="btn btn-info" type="button" id="add-btn"><i class="fa fa-plus"></i>
+                                        Add
+                                        Funds</button>
+                                    <button class="btn btn-info" type="button" id="sub-btn">
+                                        <i class="fa fa-minus"></i> Subtract Funds
+                                    </button>
+                                </div>
+                                <p role="alert" class="error"></p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+
+                            <div class="transactions">
+                                <table>
+                                    <thead>
+                                        <th>Transaction</th>
+                                        <th>Amount</th>
+                                    </thead>
+                                    <tbody id="tbody"></tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <canvas id="my-chart"></canvas>
+
+
         </div>
-    </div>
-    <!-- jQuery CDN -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <!-- jQuery CDN -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
 
-    <!-- Bootstrap JavaScript CDN -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <!-- Bootstrap JavaScript CDN -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
-    <script src="/db.js"></script>
-    <script src="/index.js"></script>
-    <script>
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', () =>
-                navigator.serviceWorker
-                    .register('service-worker.js')
-                    .then(reg => console.log('We found your service worker file!', reg))
-            );
-        }
-    </script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+        <script src="/db.js"></script>
+        <script src="/index.js"></script>
+        <script>
+            if ('serviceWorker' in navigator) {
+                window.addEventListener('load', () =>
+                    navigator.serviceWorker
+                        .register('service-worker.js')
+                        .then(reg => console.log('We found your service worker file!', reg))
+                );
+            }
+        </script>
 </body>
 
 </html>
