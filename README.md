@@ -224,7 +224,7 @@ npm i mongoose
 - Follow the steps on how to deploy an app on heroku
 
 1. Create a repository of your project in github. 
-2. Clone that reporisitory in your VS Code using git:
+2. Clone that reporisitory to your VS Code using git:
 ``` bash
 git clone "the link of the github repo"
 ```
@@ -234,7 +234,7 @@ heroku create "name of your project"
 ```
 4. Log in to your heroku account and look for your project in the DAHSBOARD. Go to the tabs located on top and click on DEPLOY. In the Deployement Method, click on the github icon to connect it to your github repository. Then on Automatic Deploy, click and enable automatic deploys
 
-5. On the top tabs, click Overview then on Installed add-ons click Configure Add-ons.
+5. On the tabs on top, click Overview then on Installed add-ons click Configure Add-ons.
 
 6. Since this project is build with MongoDB, search for mLab MongoDB in the Add-ons search. Make sure to select the "Sandbox-Free plan. Then provision it. 
 
