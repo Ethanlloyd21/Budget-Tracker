@@ -62,7 +62,7 @@ BUDGET-TRACKER Offline Functionality:
 When brought back online:
 - Offline entries should be added to tracker.
 
-## *In order to achieve PWA a web manifest file and a service worker file must be created.*
+## *In order to achieve OFFLINE SUPPORT, a manifest file and a service worker file must be created.*
 
 ### Manifest ``` manifest.webmanifest ```
 - #### Purpose
