@@ -1,5 +1,6 @@
 # Budget-Tracker
 - Using Progressive Web Application (PWA) this application enables the user to add expenses and deposits to their budget with or without an online connection. When entering transactions offline, data should populate the total when connected back online.
+- Launch the application <a href="https://lloyd-budget-tracker-pwa.herokuapp.com/" target="_blank"> > https://lloyd-budget-tracker-pwa.herokuapp.com/  < </a>
 
 ![](public/img/sample.PNG)
 
@@ -239,7 +240,7 @@ heroku create "name of your project"
 
 7. Make sure that you have "process.env.MONGODB_URI" in your mongoose.connect under the server file. 
 
-8. 
+8. Try to add a code and push it to your github. It will automatically hook it to heroku. Now view your heroku app.
 
 # Dependencies
 ``` bash
@@ -265,6 +266,8 @@ heroku create "name of your project"
 
 # Demo
 Click here for a <a href="https://drive.google.com/file/d/1HSIJYdF2RUKWc56pd1Cs4q3TZOXViT8-/view" target="_blank"> >>>>> View the video demo <<<< </a>
+
+View the the app via heroku <a href="https://lloyd-budget-tracker-pwa.herokuapp.com/" target="_blank"> >>>> https://lloyd-budget-tracker-pwa.herokuapp.com/  <<<< </a>
 
 # Author
 - Lloyd Marcelino 
