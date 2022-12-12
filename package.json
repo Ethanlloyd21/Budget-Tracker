@@ -4,7 +4,7 @@
   "description": "- Using Progressive Web Application (PWA) this application enables the user to add expenses and deposits to their budget with or without an online connection. When entering transactions offline, data should populate the total when connected back online.",
   "main": "server.js",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "install": "^0.13.0",
     "mongodb": "^3.5.5",
     "mongoose": "^5.9.7",
